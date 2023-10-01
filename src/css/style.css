@@ -1,5 +1,35 @@
-﻿.top-25 {
+﻿@font-face {
+    font-family: 'BYekan';
+    src: url('../font/BYekan.ttf') format('truetype'), url('../font/BYekan.eot'), url('../font/BYekan.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../font/Vazir.ttf') format('truetype'), url('../font/Vazir.eot'), url('../font/Vazir.woff') format('woff');
+}
+
+.vazir {
+    font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BYekan {
+    font-family: 'BYekan', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-25 {
     top: 25%;
+}
+
+header {
+    z-index: 5;
 }
 
 header .badegIcon {
@@ -8,4 +38,56 @@ header .badegIcon {
 
 header .dropdown-toggle::after {
     display: none;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh !important;
+    background-color: #596275;
+    overflow: auto;
+}
+
+.menu .item {
+    border-right: 4px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(219, 219, 219);
+}
+
+.menu .itemLi.active a {
+    border-right: 4px solid #eb3b5a;
+    background-color: #1B9CFC;
+    color: #fff;
+}
+
+.menu .item:hover {
+    border-right: 4px solid #eb3b5a;
+    background-color: #212529 !important;
+    color: #fff;
+}
+
+.menu-title h5 {
+    border-color: rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+}
+
+.sub-menu {
+    display: none;
+    /* background-color: #212529; */
+}
+
+.icon-open {
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    /* -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; */
+}
+
+.icon-open.open {
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+    /* -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; */
 }

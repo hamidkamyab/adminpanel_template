@@ -557,6 +557,30 @@
       "src": "entypo"
     },
     {
+      "uid": "9c7ff134960bb5a82404e4aeaab366d9",
+      "css": "up-open",
+      "code": 59401,
+      "src": "entypo"
+    },
+    {
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "css": "down-open",
+      "code": 59402,
+      "src": "entypo"
+    },
+    {
+      "uid": "jh3jpcb1t1bcm80gidkadilh080aq79h",
+      "css": "menu-2",
+      "code": 59571,
+      "src": "typicons"
+    },
+    {
+      "uid": "c55fdf978f617992b43ee7cbaa6ef87e",
+      "css": "menu-3",
+      "code": 61448,
+      "src": "mfglabs"
+    },
+    {
       "uid": "e963dadf3a8b69a3056a816688587934",
       "css": "acid",
       "code": 59688,
