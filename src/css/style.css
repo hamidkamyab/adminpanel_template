@@ -1,1 +1,11 @@
-﻿
+﻿.top-25 {
+    top: 25%;
+}
+
+header .badegIcon {
+    right: 5px;
+}
+
+header .dropdown-toggle::after {
+    display: none;
+}

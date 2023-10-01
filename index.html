@@ -16,71 +16,53 @@
 <body>
 
     <header class="p-2 mb-3 border-bottom">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <div class="d-flex align-items-center gap-3 px-5">
+            <div>
+                <a href="/" class="mb-2 mb-lg-0 text-dark text-decoration-none">
                     <img src="src/img/logo-bold.png" alt="" width="80">
                 </a>
-
-                <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
-                </ul> -->
-                <div class="dropdown text-end">
-                    <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
-                        <i class="icon-commenting-o text-secondary badgeBtn fs-5" role="button"></i>
-                        <span class="badge badge-primary">ss</span>
-                    </div>
-
-                    <!-- <i class="icon-commenting-o text-secondary badgeBtn" role="button"></i>
-                    <span class="num_unread_msg messageNum position-absolute rounded-3 bg-danger text-white px-1 fs-9 badgeBtn" role="button">0</span> -->
-                    <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-3">
-                        <span class="num_unread_msg fs-8 text-dark">0</span>
-                        <span class="fs-8 text-dark"> پیام خوانده نشده دارید!</span>
-                        <a href="messages.php" class="d-block fs-8 text-end text-info">مشاهده</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between flex-grow-1">
+                <div class="right d-flex align-items-center gap-4  ms-5">
+                    <i class="icon icon-menu fs-5 text-muted" role="button"></i>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="40" height="40" class="rounded-circle">
+                        <span class="fw-bold text-muted fs-6">حمید کامیاب</span>
                     </div>
                 </div>
 
-                <!-- <div class="left pe-4 d-flex align-items-center">
-                    <ul class="dropdown d-flex align-items-center fs-5">
-                        <li class="list-unstyled py-2 px-3 position-relative badgeParent NoSelect">
-                            <i class="icon-commenting-o text-secondary badgeBtn" role="button"></i>
-                            <span class="num_unread_msg messageNum position-absolute rounded-3 bg-danger text-white px-1 fs-9 badgeBtn" role="button">0</span>
-                            <div class="badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3">
-                                <span class="num_unread_msg fs-8 text-white">0</span>
-                                <span class="fs-8 text-white"> پیام خوانده نشده دارید!</span>
-                                <a href="messages.php" class="d-block fs-8 text-end text-info">مشاهده</a>
-                            </div>
-                        </li>
+                <div class="left d-flex align-items-center gap-5">
 
-
-                        <li class="list-unstyled py-2 px-3 position-relative badgeParent NoSelect">
-                            <a href="https://hamidkamyab.ir/cdn/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="icon-logout-2 text-muted fs-6" title=" خروج "></i>
-                            </a>
-
-                            <form id="logout-form" action="https://hamidkamyab.ir/cdn/logout" method="POST" style="display: none;">
-                                <input type="hidden" name="_token" value="Crn5K6NubyanYKUoEDEKtOzfmleJH34JGCjWTlHX">
-                            </form>
-                        </li>
-                    </ul>
-                </div> -->
-
-                <div class="dropdown text-end">
-                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    <div class="dropdown text-end">
+                        <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
+                            <i class="icon-commenting-o text-secondary badgeBtn fs-5" role="button"></i>
+                            <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            </span>
+                        </div>
+                        <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-3">
+                            <span class="num_unread_msg fs-8 text-dark">0</span>
+                            <span class="fs-8 text-dark"> پیام خوانده نشده دارید!</span>
+                            <a href="messages.php" class="d-block fs-8 text-end text-info">مشاهده</a>
+                        </div>
+                    </div>
+                    <div class="dropdown text-end">
+                        <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
+                            <i class="icon-ticket-1 text-secondary badgeBtn fs-5" role="button"></i>
+                            <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            </span>
+                        </div>
+                        <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-3">
+                            <span class="num_unread_msg fs-8 text-dark">0</span>
+                            <span class="fs-8 text-dark"> تیکت خوانده نشده دارید!</span>
+                            <a href="messages.php" class="d-block fs-8 text-end text-info">مشاهده</a>
+                        </div>
+                    </div>
+                    <a href="#" onclick="">
+                        <i class="icon-home-1 text-muted fs-5" title=" خانه "></i>
                     </a>
-                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
+                    <a href="#" onclick="">
+                        <i class="icon-logout-2 text-muted fs-6" title=" خروج "></i>
+                    </a>
                 </div>
             </div>
         </div>
