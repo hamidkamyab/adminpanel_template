@@ -5,16 +5,32 @@
 });
 
 $('.sidebarBtn').click(function() {
-    $('.sidebar').toggleClass('close');
-
-    if ($('.sidebar').hasClass('close')) {
-        localStorage.setItem('menu-status', 'close')
+    $('.RightMenu').toggleClass('small');
+    $('#content').toggleClass('close')
+    if ($('.RightMenu').hasClass('small')) {
+        localStorage.setItem('menu-status', 'small')
+        $('.test').removeClass('col-10')
+        $('.test').addClass('col-11')
+        $('.hiddenItem').fadeOut(300)
+        $('.main').addClass('wid')
     } else {
-        localStorage.setItem('menu-status', 'open')
+        localStorage.setItem('menu-status', '') //open
+        $('.test').removeClass('col-11')
+        $('.test').addClass('col-10')
+        $('.hiddenItem').fadeIn(300)
+        $('.main').removeClass('wid')
     }
 })
 
 window.onload = () => {
     var menuStatus = localStorage.getItem('menu-status');
-    $('.sidebar').addClass(menuStatus);
+    $('.RightMenu').addClass(menuStatus);
+    $('#content').toggleClass(menuStatus)
+    if (menuStatus == 'small') {
+        $('.hiddenItem').fadeOut(0)
+        $('.main').addClass('wid')
+    } else {
+        $('.main').removeClass('wid')
+    }
+
 }

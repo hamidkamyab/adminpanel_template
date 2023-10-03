@@ -13,146 +13,443 @@
     <link rel="stylesheet" href="src/fonticon/css/animation.css">
     <script src="src/js/jquery-3.7.1.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="src/css/jquery.custom-scrollbar.css">
-    <script src="src/js/jquery.custom-scrollbar.js" type="text/javascript"></script>
+
 </head>
 
-<body>
+<body class="BYekan">
+    <div class="RightMenu h-100 position-fixed overflow-hidden mCustomScrollbar HoverSC mCS_noMargin mCS_rightPos">
+        <div class="title border-bottom border-1 d-flex justify-content-center align-items-center text-white">
+            <span class="text-center hiddenItem">پنل مدیریت</span>
+        </div>
+        <!-- title -->
+        <div class="admin position-relative d-flex justify-content-start gap-3 mx-3 align-items-center border-bottom border-1 border-light-dark">
+            <div class="adminPic">
+                <img src="src/img/ex/admin.jpg" alt="" class="h-100">
+            </div>
+            <span class="fs-6 text-white position-absolute nameP hiddenItem">حمید کامیاب</span>
+        </div>
+        <!-- admin -->
+        <nav>
+            <ul class="menu list-unstyled text-white" role="button">
+                <li class="itemLi">
+                    <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
+                        <div class="d-flex align-items-center gap-2 ">
+                            <i class="icon-gauge"></i>
+                            <span class="BYekan hiddenItem">داشبورد</span>
+                        </div>
+                        <i class="icon-down-open icon-open d-none"></i>
+                    </a>
+                </li>
+                <li class="itemLi active open">
+                    <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
+                        <div class="d-flex align-items-center gap-2 ">
+                            <i class="icon-android"></i>
+                            <span class="BYekan hiddenItem">محصولات</span>
+                        </div>
+                        <i class="icon-down-open icon-open"></i>
+                    </a>
+                    <ul class="sub-menu list-unstyled">
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو یک</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="itemLi">
+                    <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="icon-user"></i>
+                            <span class="BYekan hiddenItem">کاربران</span>
+                        </div>
+                        <i class="icon-down-open icon-open d-none"></i>
+                    </a>
+                </li>
+                <li class="itemLi open">
+                    <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="icon-buffer"></i>
+                            <span class="BYekan hiddenItem">صفحات</span>
+                        </div>
+                        <i class="icon-down-open icon-open"></i>
+                    </a>
+                    <ul class="sub-menu list-unstyled">
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2 ">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو دو</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو سه</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-    <header class="p-2 mb-3 border-bottom bg-white position-fixed w-100">
-        <div class="d-flex align-items-center gap-3 px-5">
-            <div>
-                <a href="/" class="mb-2 mb-lg-0 text-dark text-decoration-none">
-                    <img src="src/img/logo-bold.png" alt="" width="80">
+
+                <li class="itemLi open">
+                    <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu open">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="icon-buffer"></i>
+                            <span class="BYekan hiddenItem">صفحات</span>
+                        </div>
+                        <i class="icon-down-open icon-open"></i>
+                    </a>
+                    <ul class="sub-menu list-unstyled" style="height: 600px;">
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو دو</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="itemLi">
+                            <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="icon-gauge"></i>
+                                    <span class="BYekan hiddenItem">زیر منو سه</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="HeadMenu position-fixed mb-3 border-bottom bg-white position-fixed w-100 d-flex align-items-center gap-3 px-5">
+        <div>
+            <a href="/" class="mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="src/img/logo-bold.png" alt="" width="80">
+            </a>
+        </div>
+        <div class="d-flex align-items-center justify-content-between flex-grow-1">
+            <div class="right d-flex align-items-center gap-4  ms-5">
+                <i class="icon icon-menu-1 fs-4 text-muted ms-4 sidebarBtn" role="button" data-id="sideBarId"></i>
+            </div>
+
+            <div class="left d-flex align-items-center gap-5">
+
+                <div class="dropdown text-end">
+                    <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" role="button">
+                        <i class="icon-commenting-o text-secondary badgeBtn fs-5"></i>
+                        <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        </span>
+                    </div>
+                    <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-2">
+                        <span class="num_unread_msg fs-8 text-dark">0</span>
+                        <span class="fs-8 text-dark"> پیام خوانده نشده دارید!</span>
+                        <a href="#" class="d-block fs-8 text-end text-info">مشاهده</a>
+                    </div>
+                </div>
+                <div class="dropdown text-end">
+                    <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" role="button">
+                        <i class="icon-ticket-1 text-secondary badgeBtn fs-5"></i>
+                        <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        </span>
+                    </div>
+                    <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-2">
+                        <span class="num_unread_msg fs-8 text-dark">0</span>
+                        <span class="fs-8 text-dark"> تیکت خوانده نشده دارید!</span>
+                        <a href="#" class="d-block fs-8 text-end text-info">مشاهده</a>
+                    </div>
+                </div>
+                <a href="#" onclick="">
+                    <i class="icon-home-1 text-muted fs-5" title=" خانه "></i>
+                </a>
+                <a href="#" onclick="">
+                    <i class="icon-logout-2 text-muted fs-6" title=" خروج "></i>
                 </a>
             </div>
-            <div class="d-flex align-items-center justify-content-between flex-grow-1">
-                <div class="right d-flex align-items-center gap-4  ms-5">
-                    <i class="icon icon-menu-1 fs-4 text-muted ms-2 sidebarBtn" role="button" data-id="sideBarId"></i>
-                    <div class="d-flex gap-2 align-items-center">
-                        <img src="src/img/ex/admin.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
-                        <span class="fw-bold text-muted fs-6">حمید کامیاب</span>
+        </div>
+    </div>
+
+    <div class="main vh-100" style="padding-top: 70px;">
+        <div class="content mCustomScrollbar h-100" data-mcs-theme="dark">
+            <div class="container d-flex flex-column align-items-center gap-2">
+                <div class="navigtionBar col-12 p-3 bg-white d-flex align-items-center h-auto">
+                    <h4 class="BYekan text-muted m-0 p-0">
+                        داشبورد
+                    </h4>
+                </div>
+                <!-- navigtionBar -->
+
+                <div class="col-12 bg-white p-3">
+                    <div class="col-12 d-flex justify-content-center px-2 reportCard mb-5">
+
+                        <div class="col-3 px-1 mb-2 mb-lg-0">
+                            <div class="card bg-danger">
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div class="details BYekan">
+                                        <h2 class="fs-1 fw-bolder">0</h2>
+                                        <span>بازدید روز</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="icon-eye fs-1"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer cf-hover position-relative p-0" role="button">
+                                    <a href="portfolio_list.php" class="d-flex justify-content-center position-relative text-white align-items-center w-100 h-100 p-2">
+                                        <span class="BYekan">
+                                            اطلاعات بیشتر
+                                        </span>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 px-1 mb-2 mb-lg-0">
+                            <div class="card bg-success">
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div class="details BYekan">
+                                        <h2 class="fs-1 fw-bolder">0</h2>
+                                        <span>پیام کاربران</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="icon-commenting-o fs-1"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer cf-hover position-relative p-0" role="button">
+                                    <a href="portfolio_list.php" class="d-flex justify-content-center position-relative text-white align-items-center w-100 h-100 p-2">
+                                        <span class="BYekan">
+                                            اطلاعات بیشتر
+                                        </span>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 px-1 mb-2 mb-lg-0">
+                            <div class="card bg-warning">
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div class="details BYekan">
+                                        <h2 class="fs-1 fw-bolder">0</h2>
+                                        <span>تیکت ها</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="icon-ticket-1 fs-1"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer cf-hover position-relative p-0" role="button">
+                                    <a href="portfolio_list.php" class="d-flex justify-content-center position-relative text-white align-items-center w-100 h-100 p-2">
+                                        <span class="BYekan">
+                                            اطلاعات بیشتر
+                                        </span>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 px-1 mb-2 mb-lg-0">
+                            <div class="card bg-primary">
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div class="details BYekan">
+                                        <h2 class="fs-1 fw-bolder">0</h2>
+                                        <span>سفارش ها</span>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="icon-eye fs-1"></i>
+                                    </div>
+                                </div>
+                                <div class="card-footer cf-hover position-relative p-0" role="button">
+                                    <a href="portfolio_list.php" class="d-flex justify-content-center position-relative text-white align-items-center w-100 h-100 p-2">
+                                        <span class="BYekan">
+                                            اطلاعات بیشتر
+                                        </span>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- reportCard -->
+
+                    <div class="row my-4">
+                        <div class="col-6">
+                            <h6 class="ms-2 fs-5-1  text-muted">
+                                جدیدترین کاربران:
+                            </h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col" class="fw-normal">نام و نام خانوادگی</th>
+                                        <th scope="col" class="fw-normal">ایمیل</th>
+                                        <th scope="col" class="fw-normal">استان</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>حمید کامیاب</td>
+                                        <td>mr_kamyab@yahoo.com</td>
+                                        <td>تهران</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>نگار سوسنی</td>
+                                        <td>test@yahoo.com</td>
+                                        <td>فارس</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>هستی فرهادی</td>
+                                        <td>test@yahoo.com</td>
+                                        <td>خراسان رضوی</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- user col -->
+
+                        <div class="col-6">
+                            <h6 class="ms-2 fs-5-1 text-muted">
+                                جدیدترین تیکتها:
+                            </h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col" class="fw-normal">عنوان</th>
+                                        <th scope="col" class="fw-normal">نام کاربر</th>
+                                        <th scope="col" class="fw-normal">تاریخ ایجاد</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>مشکل فنی</td>
+                                        <td>سعید کامیاب</td>
+                                        <td>1402/07/05</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>مشکل فنی</td>
+                                        <td>مریم کامیاب</td>
+                                        <td>1402/07/06</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- ticket col -->
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-6">
+                            <h6 class="ms-2 fs-5-1 text-muted">
+                                بازدید هفته:
+                            </h6>
+                            <canvas id="w_visit_chart"></canvas>
+                        </div>
+
+                        <div class="col-6">
+                            <h6 class="ms-2 fs-5-1 text-muted">
+                                فروش هفته:
+                            </h6>
+                            <canvas id="w_sell_chart"></canvas>
+                        </div>
                     </div>
                 </div>
 
-                <div class="left d-flex align-items-center gap-5">
-
-                    <div class="dropdown text-end">
-                        <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
-                            <i class="icon-commenting-o text-secondary badgeBtn fs-5" role="button"></i>
-                            <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
-                            </span>
-                        </div>
-                        <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-3">
-                            <span class="num_unread_msg fs-8 text-dark">0</span>
-                            <span class="fs-8 text-dark"> پیام خوانده نشده دارید!</span>
-                            <a href="#" class="d-block fs-8 text-end text-info">مشاهده</a>
-                        </div>
-                    </div>
-                    <div class="dropdown text-end">
-                        <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown">
-                            <i class="icon-ticket-1 text-secondary badgeBtn fs-5" role="button"></i>
-                            <span class="badegIcon position-absolute top-25 translate-middle p-1 bg-danger border border-light rounded-circle">
-                            </span>
-                        </div>
-                        <div class="dropdown-menu badgeBox outCW position-absolute end-0 py-1 px-2 rounded-3 mt-3">
-                            <span class="num_unread_msg fs-8 text-dark">0</span>
-                            <span class="fs-8 text-dark"> تیکت خوانده نشده دارید!</span>
-                            <a href="#" class="d-block fs-8 text-end text-info">مشاهده</a>
-                        </div>
-                    </div>
-                    <a href="#" onclick="">
-                        <i class="icon-home-1 text-muted fs-5" title=" خانه "></i>
-                    </a>
-                    <a href="#" onclick="">
-                        <i class="icon-logout-2 text-muted fs-6" title=" خروج "></i>
-                    </a>
+                <div class="footer col-12 p-3 bg-white d-flex justify-content-center align-items-center h-auto">
+                    <span class="vazir text-muted m-0 p-0">
+                        CopyRight: Hamid Kamyab - 2024
+                    </span>
                 </div>
-            </div>
-        </div>
-    </header>
+                <!-- navigtionBar -->
 
-    <nav id="sideBarId" class="pt-5 sidebar mCustomScrollbar" data-mcs-theme="light">
-        <div class="mt-3 px-3 menu-title position-relative">
-            <span class="BYekan py-3 text-center position-absolute">پنل مدیریت</span>
+            </div>
+            <!-- container -->
         </div>
-        <ul class="menu list-unstyled text-white border-1 border-top" role="button">
-            <li class="itemLi">
-                <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
-                    <div class="d-flex align-items-center gap-2 position-relative item-div">
-                        <i class="icon-gauge"></i>
-                        <span class="BYekan position-absolute">داشبورد</span>
-                    </div>
-                    <i class="icon-down-open icon-open d-none"></i>
-                </a>
-            </li>
-            <li class="itemLi active open">
-                <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
-                    <div class="d-flex align-items-center gap-2 position-relative item-div">
-                        <i class="icon-android"></i>
-                        <span class="BYekan position-absolute">محصولات</span>
-                    </div>
-                    <i class="icon-down-open icon-open"></i>
-                </a>
-                <ul class="sub-menu list-unstyled">
-                    <li class="itemLi">
-                        <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
-                            <div class="d-flex align-items-center gap-2 position-relative item-div">
-                                <i class="icon-gauge"></i>
-                                <span class="BYekan position-absolute">زیر منو یک</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="itemLi">
-                <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
-                    <div class="d-flex align-items-center gap-2 position-relative item-div">
-                        <i class="icon-user"></i>
-                        <span class="BYekan position-absolute">کاربران</span>
-                    </div>
-                    <i class="icon-down-open icon-open d-none"></i>
-                </a>
-            </li>
-            <li class="itemLi open">
-                <a href="#" class="item px-2 d-flex align-items-center justify-content-between gap-1 text-white toggle_menu">
-                    <div class="d-flex align-items-center gap-2 position-relative item-div">
-                        <i class="icon-buffer"></i>
-                        <span class="BYekan position-absolute">صفحات</span>
-                    </div>
-                    <i class="icon-down-open icon-open"></i>
-                </a>
-                <ul class="sub-menu list-unstyled">
-                    <li class="itemLi">
-                        <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
-                            <div class="d-flex align-items-center gap-2 position-relative item-div">
-                                <i class="icon-gauge"></i>
-                                <span class="BYekan position-absolute">زیر منو</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="itemLi">
-                        <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
-                            <div class="d-flex align-items-center gap-2 position-relative item-div">
-                                <i class="icon-gauge"></i>
-                                <span class="BYekan position-absolute">زیر منو دو</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="itemLi">
-                        <a href="#" class="item px-2 d-flex align-items-center gap-2 text-white">
-                            <div class="d-flex align-items-center gap-2 position-relative item-div">
-                                <i class="icon-gauge"></i>
-                                <span class="BYekan position-absolute">زیر منو سه</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    </div>
+
 
 </body>
-<script src="src/js/bootstrap.bundle.js " type="text/javascript "></script>
+
+<script src="src/js/bootstrap.bundle.js" type="text/javascript "></script>
+<script src="src/js/jquery.custom-scrollbar.js"></script>
 <script src="src/js/style.js " type="text/javascript "></script>
+<script src="src/js/chart.js " type="text/javascript "></script>
+
+<script>
+    const wvc = document.getElementById('w_visit_chart');
+    new Chart(wvc, {
+        type: 'bar',
+        data: {
+            labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنج شنبه', 'جمعه'],
+            datasets: [{
+                label: 'بازدید',
+                data: [812, 190, 433, 500, 200, 300, 940],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    });
+
+    const wsc = document.getElementById('w_sell_chart');
+    new Chart(wsc, {
+        type: 'bar',
+        data: {
+            labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنج شنبه', 'جمعه'],
+            datasets: [{
+                label: 'فروش',
+                data: [10, 5, 23, 7, 4, 6, 40],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    });
+</script>
 
 </html>
